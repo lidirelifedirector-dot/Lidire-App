@@ -10,5 +10,5 @@ not_found_handling = "single-page-application"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "lidire-comercial"
+database_name = "lidire-app"
 database_id = "00000001-00000000-000050eb-67a3ab073bf3ab0a04fdd525919c09d6"
