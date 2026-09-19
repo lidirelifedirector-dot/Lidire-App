@@ -7,4 +7,4 @@ workers_dev = true
 # [[d1_databases]]
 # binding = "DB"
 # database_name = "lidire-mvp"
-# database_id = "COLOQUE_O_DATABASE_ID_AQUI"
+# database_id = "1a095fd7-b0a0-4b83-b610-1b3a43fbb716"
