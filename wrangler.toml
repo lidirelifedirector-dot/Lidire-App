@@ -2,9 +2,8 @@ name = "lidire-mvp-1-0"
 main = "index.js"
 compatibility_date = "2026-09-18"
 workers_dev = true
-# D1 será conectado depois que a base for criada no painel Cloudflare.
-# Não coloque um database_id fictício aqui.
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "lidire-mvp"
-# database_id = "1a095fd7-b0a0-4b83-b610-1b3a43fbb716"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lidire-mvp"
+database_id = "1a095fd7-b0a0-4b83-b610-1b3a43fbb716"
