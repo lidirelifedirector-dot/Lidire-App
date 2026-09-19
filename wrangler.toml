@@ -1,9 +1,9 @@
-name = "lidire-mvp-1-0"
+name = "lidire-app"
 main = "index.js"
 compatibility_date = "2026-09-18"
 workers_dev = true
 
 [[d1_databases]]
 binding = "DB"
-database_name = "lidire-mvp"
+database_name = "lidire-app"
 database_id = "1a095fd7-b0a0-4b83-b610-1b3a43fbb716"
