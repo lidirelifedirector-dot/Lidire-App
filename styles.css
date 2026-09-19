@@ -1,0 +1,45 @@
+
+:root{
+  --bg:#070C22;
+  --bg-2:#0B1230;
+  --card:#101A3B;
+  --card-2:#141F47;
+  --border:rgba(112,120,255,.25);
+  --text:#F7F8FF;
+  --muted:#A9B0CA;
+  --purple:#7B2CFF;
+  --blue:#2E75FF;
+  --cyan:#12D9D2;
+  --pink:#E91E9B;
+  --gradient:linear-gradient(135deg,#7B2CFF 0%,#2875FF 48%,#11D9D2 100%);
+  --shadow:0 14px 40px rgba(0,0,0,.32);
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:radial-gradient(circle at 50% -10%,#1b1c59 0%,var(--bg) 42%);color:var(--text);font-family:Inter,system-ui,sans-serif}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+#app{min-height:100vh}
+.app-shell{max-width:520px;margin:0 auto;min-height:100vh;padding-bottom:82px}
+.topbar{height:70px;display:flex;align-items:center;justify-content:space-between;padding:12px 18px;position:sticky;top:0;z-index:10;background:rgba(7,12,34,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.05)}
+.brand{display:flex;align-items:center;gap:10px}.brand img{width:38px;height:38px;object-fit:contain;background:#000;border-radius:10px}.brand strong{font-family:Poppins;font-size:19px}.brand small{display:block;color:var(--muted);font-size:9px}
+.icon-btn{border:0;background:rgba(255,255,255,.06);color:white;width:40px;height:40px;border-radius:14px}
+main{padding:18px}
+h1,h2,h3{font-family:Poppins;margin:0 0 8px}.eyebrow{color:#a88aff;font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:700}
+.muted{color:var(--muted)}
+.card{background:linear-gradient(180deg,rgba(20,31,71,.96),rgba(13,22,51,.96));border:1px solid var(--border);border-radius:22px;padding:18px;box-shadow:var(--shadow);margin:12px 0}
+.hero-card{padding:22px;background:radial-gradient(circle at 100% 0%,rgba(84,53,255,.28),transparent 42%),linear-gradient(150deg,#111a42,#0d1736)}
+.gradient-text{background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:rgba(255,255,255,.045);padding:14px;border-radius:16px}.stat b{font-size:20px;display:block}.stat span{font-size:12px;color:var(--muted)}
+.primary{border:0;color:#fff;background:var(--gradient);border-radius:15px;padding:13px 18px;font-weight:700;box-shadow:0 8px 24px rgba(88,54,255,.25)}
+.secondary{border:1px solid var(--border);color:#fff;background:rgba(255,255,255,.04);border-radius:15px;padding:12px 16px;font-weight:600}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.stack{display:grid;gap:10px}
+.item{display:flex;align-items:center;gap:12px;padding:14px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.04)}
+.item .ico{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:var(--gradient)}
+.pill{padding:5px 9px;border-radius:999px;background:rgba(18,217,210,.12);color:var(--cyan);font-size:11px}
+.bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(520px,100%);height:76px;display:grid;grid-template-columns:repeat(5,1fr);background:rgba(8,13,36,.94);backdrop-filter:blur(18px);border-top:1px solid rgba(255,255,255,.07);z-index:20}
+.nav-btn{border:0;background:transparent;color:#7f89aa;font-size:10px;display:grid;place-items:center;padding-top:8px}.nav-btn.active{color:#fff}.nav-btn .nav-ico{font-size:20px;margin-bottom:3px}
+.form{display:grid;gap:12px}.form label{font-size:12px;color:var(--muted)}.form input,.form textarea,.form select{width:100%;border:1px solid var(--border);background:#0b1431;color:white;border-radius:14px;padding:13px;outline:none}.form input:focus,.form textarea:focus{border-color:#6c66ff}
+.list-actions{display:flex;gap:8px;flex-wrap:wrap}.empty{padding:30px 10px;text-align:center;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%);background:#16234d;border:1px solid var(--border);padding:12px 16px;border-radius:14px;z-index:50;display:none}
+@media(min-width:800px){body{padding:20px}.app-shell{border:1px solid rgba(255,255,255,.08);border-radius:30px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.4)}.topbar{position:sticky}}
